@@ -136,5 +136,56 @@
         app:layout_constraintTop_toBottomOf="@id/tv_potency_value"
         />
 
+    <EditText
+        android:id="@+id/et_preco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:hint="@string/preco_kwh"
+        android:maxLength="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_charging_value"
+        />
+
+    <EditText
+        android:id="@+id/et_km_percorrido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/km"
+        android:maxLength="10"
+        android:layout_marginTop="4dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@id/et_preco"
+        app:layout_constraintStart_toStartOf="@id/et_preco"
+        app:layout_constraintTop_toBottomOf="@id/et_preco"
+        />
+
+    <Button
+        android:id="@+id/bCalcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_km_percorrido"
+        app:layout_constraintStart_toStartOf="@id/et_km_percorrido"
+        app:layout_constraintEnd_toEndOf="@id/et_km_percorrido"
+        android:text="@string/calcular"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/et_preco"
+        app:layout_constraintStart_toStartOf="@id/et_preco"
+        app:layout_constraintTop_toBottomOf="@id/bCalcular"
+
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,11 +4,14 @@
     <string name="price_car1">Preço</string>
     <string name="cars">Carros</string>
     <string name="favorites">Favoritos</string>
-    <string name="value_car">???</string>
+    <string name="value_car">teste</string>
     <string name="battery">Bateria</string>
-    <string name="value_battery">???</string>
+    <string name="value_battery">teste</string>
     <string name="potency">Potencia</string>
-    <string name="value_potency">???</string>
+    <string name="value_potency">teste</string>
     <string name="charging">Recarga</string>
-    <string name="value_charging">???</string>
+    <string name="value_charging">teste</string>
+    <string name="preco_kwh">Preço Kwh</string>
+    <string name="km">Km Percorrido</string>
+    <string name="calcular">Calcular</string>
 </resources>

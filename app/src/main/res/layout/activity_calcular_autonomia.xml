@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--background="?attr/selectableItemBackgroundBorderless" dá efeito ao selecionar
+     o componente -->
+    <ImageView
+        android:id="@+id/ib_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_close"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleCalcular"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ib_close"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_preco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:ems="10"
+        android:hint="@string/preco_kwh"
+        android:maxLength="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        />
+
+    <EditText
+        android:id="@+id/et_km_percorrido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:ems="10"
+        android:hint="@string/km"
+        android:maxLength="10"
+        android:layout_marginTop="4dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@id/et_preco"
+        app:layout_constraintStart_toStartOf="@id/et_preco"
+        app:layout_constraintTop_toBottomOf="@id/et_preco"
+        />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_km_percorrido"
+        app:layout_constraintStart_toStartOf="@id/et_km_percorrido"
+        app:layout_constraintEnd_toEndOf="@id/et_km_percorrido"
+        android:text="@string/calcular"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        app:layout_constraintEnd_toEndOf="@id/et_preco"
+        app:layout_constraintStart_toStartOf="@id/et_preco"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
